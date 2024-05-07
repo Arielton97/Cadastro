@@ -50,3 +50,7 @@ Gerente: Gerentes têm uma faixa salarial ampla, dependendo do tamanho da empres
 Diretor: Diretores ocupam cargos de alto escalão e, portanto, seus salários são substanciais. A média para diretores pode variar de R$ 10.000 a R$ 25.000 mensais.
 Presidente: O presidente de uma empresa é o cargo mais alto e, portanto, seus salários são significativamente maiores. A média para presidentes pode variar de R$ 20.000 a R$ 50.000 por mês.
 Lembrando que esses valores são apenas médias e podem variar consideravelmente com base na localização geográfica, setor de atuação e porte da empresa.
+
+
+
+![alt text](/assets/img/image.png)
