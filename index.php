@@ -12,39 +12,36 @@
     <script src="assets/js/script.js"></script>
     <!-- Navegação -->
     <header>
-        <div class="container" id="nav-container">
-            <nav>
-                <!-- Logo da UNIASSELVi -->
+        <div>
+            <div class="navegacao_principal">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <a href="#">
-                    <img src="assets/img/uniasselvi-logo.jpeg" alt="logo_uniasselvi_png">
-                </a>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link disabled">Sair</a>
-                    </li>
-                </ul>
-            </nav>
+                <img src="https://portal.uniasselvi.com.br/public/img/site/logo-horizontal_desk.png" alt="UNIAASELVI" class=""></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled">Sair</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        
     </header>
-        
-
-    <main class"container">
-        
+    <!-- Conteúdo principal da página -->
+    <main class="container">
         <!-- Titulo para o CRUD - UNIASSELVI - e links para cadastro e consulta -->
         <div>
-        <h1 class="">CRUD simplista para a UNIASSELVI</h1>
-        <div class="">
-            <button type="button" class="btn btn-primary btn-lg">
-                <a href="assets/util/cadastro.html" id="botao">Cadastro de funcionário</a>
-            </button>
-            <button type="button" class="btn btn-primary btn-lg">
-                <a href="assets/util/consultar.php" id="botao">Consultar funcionários no formulário</a>
-            </button>
-        </div>
+            <h1 class="crud_uniasselvi">CRUD simplista para a UNIASSELVI</h1>
+            <div class="botoes">
+                <button type="button" class="btn btn-primary btn-lg">
+                    <a href="assets/util/cadastro.html" id="botao">Cadastro de funcionário</a>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg">
+                    <a href="assets/util/consultar.php" id="botao">Consultar funcionários no formulário</a>
+                </button>
+            </div>
         </div>
     </main>
 </body>

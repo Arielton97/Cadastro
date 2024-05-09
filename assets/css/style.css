@@ -1,32 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --color-light-50: #fff;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #1d1d1b;
+    --color-dark-900: #000;
+
+    --color-yellow-50: #ffff66;
+    --color-yellow-100: #ffff33;
+    --color-yellow-200: #ffff00;
+
+    --color-gradient: linear-gradient(90deg, var(--color-yellow-50), var(--color-yellow-100), var(--color-yellow-200))
+}
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: #1d1d1b;
+}
+
+html, body {
+    height: 100% !important;
 }
 
 .container {
-    padding: 70px 0;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-p, li {
-    color: #444;
-    font-size: 14px;
+.crud_uniasselvi {
+    background-color: var(--color-yellow-100);
+    padding: 20vh;
+    border-radius: 8px;
 }
 
-/* Barra de navegação */
-.nav-container {
-    padding: 0;
-    margin: 0;
+.botoes {
+    padding-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
 }
 
-.logo {
-    width: 35px;
+.botoes > button {
+    background-color: var(--color-yellow-50);
+    border: var(--color-yellow-100);
 }
 
-#botao {
+.botoes > button:hover {
+    background-color: var(--color-dark-100);
+}
+
+.botoes >button>a:hover {
+    color: var(--color-light-50);
+}
+
+.botoes > button>a {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--color-dark-100);
 }
+

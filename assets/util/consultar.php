@@ -9,19 +9,29 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
-    <main>
-        <nav>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a href="../../index.php" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="cadastro.html" class="nav-link active">Cadastrar</a>
-                </li>
-            </ul>
-        </nav>
+    <script src="assets/js/script.js"></script>
+    <!-- Navegação -->
+    <header>
         <div>
-            <h1>Formulário de Funcionários</h1>
+            <div class="navegacao_principal">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <a href="#">
+                <img src="https://portal.uniasselvi.com.br/public/img/site/logo-horizontal_desk.png" alt="UNIAASELVI" class=""></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../../index.php" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.html" class="nav-link active">Cadastrar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 class="crud_uniasselvi">Formulário de Funcionários</h1>
             <p>Lista de funcionários cadastrados no formulário</p>
             <?php
                 //  Obtém a lista de hábitos do banco de dados MySQL

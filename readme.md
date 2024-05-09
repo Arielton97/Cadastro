@@ -53,4 +53,4 @@ Lembrando que esses valores são apenas médias e podem variar consideravelmente
 
 
 
-![alt text](/assets/img/uniasselvi-logo.jpeg)
+![alt text](/assets/img/image.png)
