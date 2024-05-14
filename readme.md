@@ -54,7 +54,8 @@ Lembrando que esses valores são apenas médias e podem variar consideravelmente
 
 
 
-![Homepage](assets/img/homepage.pngassets/img/image.png)
+![Logo](assets/img/uniasselvi-logo.jpeg)
+![Homepage](assets/img/homepage.png)
 ![Cadastro](assets/img/cadastro_homepage.png)
 ![Consulta](assets/img/consulta_homepage.png)
-![Logo](assets/img/uniasselvi-logo.jpeg)
+![Atualizar](assets/img/homepage_atualizar.png)
