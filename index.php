@@ -21,7 +21,7 @@
             </div>
             <div class="links">
                 <ul class="nav-itens">
-                    <li class="">
+                    <li class="nav-item-home">
                         <a href="#" class="nav-link active" aria-current="page">Home</a>
                     </li>
                     <li class="">
