@@ -1,4 +1,5 @@
  Criar um banco de dados chamado “Uniasselvi” no MySQL;
+ * TODO fazer o banco de dados pelo mysql
 
 
  Criar uma tabela chamada “Funcionario” com os campos “codigo”, “nome”, “cargo”, 
