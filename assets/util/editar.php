@@ -28,13 +28,13 @@
                 exit();     
             }
             $id = $_GET['id'];      
-            $sql = "SELECT * FROM funcionarios WHERE codigo = " . mysqli_real_escape_string($conexao, $id);      
+            $sql = "SELECT * FROM funcionario WHERE idfuncionario = " . mysqli_real_escape_string($conexao, $id);      
             $resultado = mysqli_query($conexao, $sql);      
             if (mysqli_num_rows($resultado) > 0) {         
                 $linha = mysqli_fetch_assoc($resultado);          
         ?>      
             <form action="atualizar.php" method="post">
-                <input type="hidden" name="codigo" value="<?php echo $linha['codigo']; ?>">
+                <input type="hidden" name="idfuncionario" value="<?php echo $linha['idfuncionario']; ?>">
                 <div>
                     <!-- Nome -->
                     <label for="nome">
@@ -45,30 +45,30 @@
                     </label>
                     <!-- Cargo OK-->
                     <label for="cargo">
-                        Cargo:
+                        Cargo: [<?php echo $linha['cargo']; ?>]
                         <div>
                             <input type="radio" name="cargo" value="Estagiário" required>
-                            <label for="">Estagiário</label>
+                            Estagiário
                             <input type="radio" name="cargo" value="Auxiliar" required>
-                            <label for="">Auxiliar</label>
+                            Auxiliar
                             <input type="radio" name="cargo" value="Assistente" required>
-                            <label for="">Assistente</label>
+                            Assistente
                             <input type="radio" name="cargo" value="Técnico" required>
-                            <label for="">Técnico</label>
+                            Técnico
                             <input type="radio" name="cargo" value="Trainee" required>
-                            <label for="">Trainee</label>
+                            Trainee
                             <input type="radio" name="cargo" value="Analista" required>
-                            <label for="">Analista</label>
+                            Analista
                             <input type="radio" name="cargo" value="Encarregado" required>
-                            <label for="">Encarregado</label>
+                            Encarregado
                             <input type="radio" name="cargo" value="Coordenador/ Supervisor" required>
-                            <label for="">Coordenador/ Supervisor</label>
+                            Coordenador/ Supervisor
                             <input type="radio" name="cargo" value="Gerente" required>
-                            <label for="">Gerente</label>
+                            Gerente
                             <input type="radio" name="cargo" value="Diretor" required>
-                            <label for="">Diretor</label>
+                            Diretor
                             <input type="radio" name="cargo" value="Presidente" required>
-                            <label for="">Presidente</label>
+                            Presidente
                         </div>
                     </label>
 
@@ -76,12 +76,12 @@
                     <label for="descricaodocargo">
                         Descrição do cargo:
                         <div>
-                            <textarea name="descricaodocargo" id="" cols="30" rows="10" required><?php echo $linha['descricaodocargo']; ?></textarea>
+                            <textarea name="descricao_do_cargo" id="" cols="30" rows="10" required><?php echo $linha['descricao_do_cargo']; ?></textarea>
                         </div>
                     </label>
 
                     <label for="setor">
-                        Setor:
+                        Setor: [<?php echo $linha['setor']; ?>]
                         <div>
                             <input type="radio" name="setor" value="Setor Administrativo" required>
                             <label for="">Setor Administrativo</label>
@@ -98,7 +98,7 @@
 
                     <!-- Salário -->
                     <label for="salario">
-                        Salário:
+                        Salário: [<?php echo $linha['salario']; ?>]
                         <div>
                             <select name="salario">
                                 <option value="">Selecione o salário</option>

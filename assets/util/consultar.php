@@ -38,7 +38,7 @@
                 require_once 'conexao.php';
 
                 //Executa a query/ consulta da variável $sql
-                $sql = " SELECT * FROM funcionarios";
+                $sql = " SELECT * FROM funcionario";
                 $resultado = $conexao->query($sql);
 
                 session_unset();
@@ -63,14 +63,14 @@
                             while($registro = $resultado->fetch_assoc()) {
                                 ?>
                                 <tr> 
-                                    <td> <?php echo $registro["codigo"]; ?> </td>
+                                    <td> <?php echo $registro["idfuncionario"]; ?> </td>
                                     <td> <?php echo $registro["nome"]; ?> </td>
                                     <td> <?php echo $registro["cargo"]; ?> </td>
-                                    <td> <?php echo $registro["descricaodocargo"]; ?> </td>
+                                    <td> <?php echo $registro["descricao_do_cargo"]; ?> </td>
                                     <td> <?php echo $registro["setor"]; ?> </td>
                                     <td> <?php echo $registro["salario"]; ?> </td>
-                                    <td> <?php echo "<a href='editar.php?id=" . $registro['codigo'] . "'>" . "Editar" . "</a>" ;?></td> 
-                                    <td> <?php echo "<a href='apagar.php?id=" . $registro['codigo'] . "'>" . "Apagar" . "</a>" ;?></td>
+                                    <td> <?php echo "<a href='editar.php?id=" . $registro['idfuncionario'] . "'>" . "Editar" . "</a>" ;?></td> 
+                                    <td> <?php echo "<a href='apagar.php?id=" . $registro['idfuncionario'] . "'>" . "Apagar" . "</a>" ;?></td>
                                 </tr>
                             <?php
                             } // fim do looping

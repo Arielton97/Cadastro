@@ -43,7 +43,7 @@
                         <label for="nome" class="form-label">
                             <div>
                                 <i class="fa-solid fa-user"></i> Nome
-                                <input type="text" name="nome" class="form-control" autofocus required>
+                                <input type="text" name="nome" class="form-control">
                             </div>
                         </label>
                     </div>

@@ -6,18 +6,18 @@
 
         $nome = mysqli_real_escape_string($conexao, $_POST['nome']);
         $cargo = mysqli_real_escape_string($conexao, $_POST['cargo']);
-        $descricaoDoCargo = mysqli_real_escape_string($conexao, $_POST['descricaodocargo']);
+        $descricaoDoCargo = mysqli_real_escape_string($conexao, $_POST['descricao_do_cargo']);
         $setor = mysqli_real_escape_string($conexao, $_POST['setor']);
         $salario = mysqli_real_escape_string($conexao, $_POST['salario']);
 
-        $id = mysqli_real_escape_string($conexao, $_POST['codigo']);
+        $id = mysqli_real_escape_string($conexao, $_POST['idfuncionario']);
 
         $sql = "UPDATE funcionarios SET nome = '$nome', 
                                     cargo = '$cargo', 
-                                    descricaodocargo = '$descricaoDoCargo', 
+                                    descricao_do_cargo = '$descricaoDoCargo', 
                                     setor = '$setor', 
                                     salario = '$salario'   
-                                    WHERE codigo = '$id'";
+                                    WHERE idfuncionario = '$id'";
 
         if(mysqli_query($conexao, $sql)) {
             $_SESSION['mensagem'] = "Registro editado com sucesso";

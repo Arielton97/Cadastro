@@ -3,8 +3,8 @@
     //Variáveis para conexão com o banco de dados
     $host = "localhost";
     $usuario = "root";
-    $senha = "";
-    $banco = "uniasselvi_teste";
+    $senha = "Ariel,199703";
+    $banco = "uniasselvi";
 
     //Variável de conexão com o banco de dados
     $conexao = mysqli_connect($host, 

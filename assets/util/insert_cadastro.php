@@ -2,8 +2,8 @@
 
     $servidor = "localhost";
     $usuario = "root";
-    $senha = "";
-    $bancodedados = "uniasselvi_teste";
+    $senha = "Ariel,199703";
+    $bancodedados = "uniasselvi";
 
     // Abre a conexão com o banco de dados lista de habito
 
@@ -20,24 +20,24 @@
     // $nome = $_GET["nome"];
     $nome = $_POST["nome"];
     $cargo = $_POST["cargo"];
-    $descricaodocargo = $_POST["descricaodocargo"];
+    $descricaoDoCargo = $_POST["descricao_do_cargo"];
     $setor = $_POST["setor"];
     $salario = $_POST["salario"];
     
     // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if ($conexao->connect_error) {
+        die("Connection failed: " . $conexao->connect_error);
     }
 
     // Arrumar isso aqui também  
     // $sql = "INSERT INTO funcionarios (nome, ) VALUES ('".$nome."','A')";
-    $sql = "INSERT INTO funcionarios (nome, 
+    $sql = "INSERT INTO funcionario (nome, 
                                     cargo, 
-                                    descricaodocargo, 
+                                    descricao_do_cargo, 
                                     setor, 
                                     salario) VALUES ('$nome', 
                                                 '$cargo', 
-                                                '$descricaodocargo', 
+                                                '$descricaoDoCargo', 
                                                 '$setor', 
                                                 '$salario')";
     
