@@ -78,7 +78,7 @@ nav > .links > ul > li >a:hover {
 }
 
 .botoes_cadastro {
-    padding-top: 20vh;
+    padding-top: 20px;
     display: flex; /* ou display: grid; */
     align-items: center;
     justify-content: flex-start;
@@ -102,5 +102,4 @@ nav > .links > ul > li >a:hover {
 .botoes > a >button:hover {
     color: var(--color-light-50);
 }
-
 

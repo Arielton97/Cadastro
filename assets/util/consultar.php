@@ -9,30 +9,49 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+    <style>
+        .acoes {
+            text-align: center;
+        }
+
+        .container {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .botao_cadastrar {}
+    </style>
     <script src="assets/js/script.js"></script>
     <!-- Navegação -->
     <header>
-        <div>
-            <div class="navegacao_principal">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav>
+            <div class="logo">
                 <a href="#">
-                <img src="https://portal.uniasselvi.com.br/public/img/site/logo-horizontal_desk.png" alt="UNIAASELVI" class=""></a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="../../index.php" class="nav-link active" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="cadastro.html" class="nav-link active">Cadastrar</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <img src="https://portal.uniasselvi.com.br/public/img/site/logo-horizontal_desk.png" alt="UNIAASELVI">
+                </a>
             </div>
-        </div>
+            <div class="links">
+                <ul class="nav-itens">
+                    <li class="nav-item-home">
+                        <a href="../../index.php" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="cadastro.html" class="nav-link active">Cadastrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
         <div>
-            <h1 class="crud_uniasselvi">Formulário de Funcionários</h1>
-            <p>Lista de funcionários cadastrados no formulário</p>
+            <!-- Titulo do conteúdo principal -->
+            <div>
+                <h1>Funcionários cadastrados</h1>
+                <p>Lista de funcionários cadastrados no formulário</p>
+            </div>
+            
             <?php
                 //  Obtém a lista de hábitos do banco de dados MySQL
                 require_once 'conexao.php';
@@ -48,15 +67,16 @@
                     
             ?>
                     <br />
-                    <table border="1px">
+                    <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <th>Codigo</th>
-                                <th>Nome</th>
-                                <th>Cargo</th>
-                                <th>Descrição do Cargo</th>
-                                <th>Setor</th>
-                                <th>Salário</th>
+                                <th title="Codigo do funcionário">Codigo</th>
+                                <th title="Nome do Funcionário">Nome</th>
+                                <th title="cargo do Funcionário">Cargo</th>
+                                <th title="Descrição do cargo do funcionário">Descrição do Cargo</th>
+                                <th title="Setor de trabalho do funcionário">Setor</th>
+                                <th title="Salário do funcionário">Salário</th>
+                                <th title="Ações de editar ou apagar" colspan="2" class="acoes">Ações</th>
                             </tr>
                             <?php
                             //  Looping pelos registros retornados
@@ -90,14 +110,19 @@
             $conexao->close();
             ?>
 
+                <br>
+                
             <!-- Botão para cadastrar funcionários -->
-            <p>Cadastrar mais funcionários no formulário ?</p>
-            <button type="button" class="btn btn-primary btn-lg">
-                <a href="cadastro.html" id="botao">Cadastrar Funcionário</a>
-            </button>
-            
+            <div class="botao_cadastrar">
+                <a href="cadastro.html">
+                    <p>Cadastrar mais funcionários no formulário ?</p>
+                    <button type="button" class="btn btn-primary">
+                        Cadastrar Funcionário
+                    </button>
+                    <!-- * TODO Criar um botão que vai usar javascript para imprimir o formulário em PDF -->
+                </a>
+            </div>
         </div>
-    </main>
-    
+    </main>    
 </body>
 </html>
