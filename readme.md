@@ -9,16 +9,7 @@
  * TODO fazer o banco de dados pelo mysql
 
 
- Criar uma tabela chamada “Funcionario” com os campos “codigo”, “nome”, “cargo”, 
-“descricaocargo”, “setor” e “salario (o comando SQL está descrito abaixo);
 
-
- Criar uma página inicial HTML com um link para a segunda página que terá o 
-formulário para cadastro;
-
-
- Criar uma segunda página HTML, contendo o formulário de cadastro, onde no botão 
-gravar será feita a requisição para cadastro do funcionário.
 
 * TODO - Verificar algumas informações por este link [Manipulando dados com radio-button-com-php](http://devfuria.com.br/php/manipulando-radio-button-com-php/)
 

@@ -18,8 +18,6 @@
             margin: 10px;
             padding: 10px;
         }
-
-        .botao_cadastrar {}
     </style>
     <script src="assets/js/script.js"></script>
     <!-- Navegação -->
