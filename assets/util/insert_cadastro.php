@@ -1,5 +1,5 @@
 <?php
-
+/*
     $servidor = "localhost";
     $usuario = "root";
     $senha = "";
@@ -15,7 +15,8 @@
     if ($conexao->connect_error) {
         die ("A conexão falhou: " . $conexao->connect_error);
     }
-
+*/
+    include 'conexao.php';
     // arrumar isso aqui 
     // $nome = $_GET["nome"];
     $nome = $_POST["nome"];
