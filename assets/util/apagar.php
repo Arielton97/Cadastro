@@ -8,7 +8,7 @@
     }
 
     // para deletar
-    
+
     $id = $_GET['id'];   
 
     $sql = "DELETE FROM funcionario WHERE idfuncionario = " . mysqli_real_escape_string($conexao, $id);      
@@ -24,8 +24,3 @@
     // FECHAR CONEXÃO 
     mysqli_close($conexao);
 ?>
-
-
-
-
-</html>
